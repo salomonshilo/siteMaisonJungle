@@ -1,5 +1,6 @@
 import React from 'react'
 import { plantList } from '../data/plantLists'
+import '../styles/ShoppingList.css'
 
 	const categories = plantList.reduce(
     (acc, plant) =>
@@ -10,15 +11,27 @@ import { plantList } from '../data/plantLists'
  
   
 
-const myPlantList = plantList.map((plant)=>(<li key= {plant.id}> {plant.name} </li>))
+ 
 
 
 function ShoppingList() {
     return (
-        <div>
-            <ul>{categories.map((cat) => (<li key={cat} > {cat} </li>))} </ul>
-            <ul>{myPlantList} </ul>
-        </div>
+      <div>
+        <ul>
+          {categories.map((cat) => (
+            <li key={cat}>{cat}</li>
+          ))}
+        </ul>
+        <ul className="lmj-plant-list">
+          {plantList.map((plant) => (
+            <li key={plant.id} className="lmj-plant-item">
+              {plant.name}
+
+              {plant.isSpecialOffer ? <div className='lmj-sales'>Soldes </div> : null}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
 }
 
