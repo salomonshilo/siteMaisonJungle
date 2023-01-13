@@ -2,6 +2,7 @@ import { plantList } from "../data/plantLists";
 import PlantItem from "./PlantItem";
 import "../styles/ShoppingList.css";
 
+
 function ShoppingList() {
   const categories = plantList.reduce(
     (acc, plant) =>
@@ -24,8 +25,13 @@ function ShoppingList() {
             name={name}
             water={water}
             light={light}
+  
           />
-        ))}
+          
+        )
+        )}
+        
+      
       </ul>
     </div>
   );
