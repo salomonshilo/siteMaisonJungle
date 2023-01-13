@@ -15,7 +15,7 @@ function PlantItem({ id, cover, name, water, light }) {
         <CareScale careType="water" scaleValue={water} />
         <CareScale careType="light" scaleValue={light} />
       </div>
-      <button> ajouter</button>
+     
     </li>
   );
 }
