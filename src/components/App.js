@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import ShoppingList from "./ShoppingList";
 import "../styles/Layout.css";
 
+
 function App() {
   const [cart, updateCart] = useState([]);
   return (
@@ -18,7 +19,12 @@ function App() {
         <Cart cart={cart} updateCart={updateCart} />
         <ShoppingList cart={cart} updateCart={updateCart} />
       </div>
-      <Footer />
+      <div>
+         <Footer />
+      </div>
+     
+     
+      
     </div>
   );
 }
