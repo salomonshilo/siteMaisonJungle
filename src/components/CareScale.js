@@ -6,7 +6,7 @@ import Water from "../assets/water.svg";
 const quantityLabel = {
   1: "peu",
   2: "modérément",
-  3: "beaucoup",
+  3: "beaucoup trop",
 };
 
 

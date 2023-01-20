@@ -21,7 +21,7 @@ function Footer() {
       <div className="lmj-footer-elem">
         Pour les passionnés de plantes 🌿🌱🌵
       </div>
-      <div className="lmj-footer-elem">Laissez-nous votre mail :</div>
+      <div className="lmj-footer-elem">Laissez-nous votre mail pour un prochain rendez vous :</div>
       <input
         placeholder="Entrez votre mail"
         onChange={handleInput}
